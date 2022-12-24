@@ -1,0 +1,24 @@
+@mixin media($width){
+    @media screen and(max-width : $width) {
+       @content; 
+    }
+}
+
+@include media(768px){   
+
+    #navigation{
+        display: none;
+    }   
+    .navigation_hum{       
+        display: block;
+    }
+}
+@include media(550px){   
+    #extra{
+        display: none;
+    }
+ .extra_hum{
+        display: block;
+    }
+   
+}

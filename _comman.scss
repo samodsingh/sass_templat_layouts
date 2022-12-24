@@ -1,0 +1,68 @@
+
+
+#container{
+    width: 100%;
+    margin: 0px auto;
+    #header{
+        display: flex;
+        height: 40px;
+        background-color: $header_bg;
+        align-items: center;
+        padding: 10px 15px;
+        a{
+            text-decoration: none;  
+            font-size: 25px;     
+        }
+        
+        
+       
+    }
+ #wrapper{
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+    overflow: hidden;
+    #extra{
+        @include width(200);
+        max-height: 350px;
+        background-color: $extra;
+        text-align: left;
+        padding: 6px 10px;
+        line-height: 20px;
+        overflow: hidden;
+
+    }
+    #content{
+        @include width(800);
+        text-align: start;
+        padding: 10px;
+    }
+    #navigation{
+        @include width(250); 
+        height: 100px;       
+        text-align: start;
+        background-color: $navigation;
+        padding: 10px;
+        ul{
+            padding: 0px;
+            li{
+                list-style: none;
+                line-height: 25px;
+                a{
+                    text-decoration: none;
+                }    
+            }
+        }
+    }
+   
+
+ }
+ #footer{
+    background-color: $footer;
+    padding: 8px;
+    
+    p{
+        margin-bottom: 5px;
+    }
+}
+}

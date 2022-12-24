@@ -1,0 +1,23 @@
+$width : 768;
+@if($width < 768){
+    .navigation_hum{
+        position: absolute;
+        right: 30px;
+        display: block;
+        }
+        .extra_hum{
+            margin-right: 10px;
+            display: block;
+            
+        }
+}@else{
+    .navigation_hum{ 
+        position: absolute;
+        right: 30px;       
+        display: none;
+        }
+        .extra_hum{
+            margin-right: 10px;
+            display: none;
+        }
+}
