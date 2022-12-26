@@ -1,0 +1,24 @@
+$container_width : 1000;
+@function lg-3($width){
+@return $width / 3.9 + px;
+}
+
+@function lg-1($width){
+@return $width / 3.4 + px;
+}
+
+
+.content{
+    width : lg-3($container_width);
+        text-align: center;
+        background: $content_bg;
+        border-top: $content_border 2px solid;
+}
+.secondary{
+    width : lg-1($container_width);
+    background: $secondery_bg;
+    border-top: $secondery_border 2px solid;  
+    text-align: center;
+}
+
+

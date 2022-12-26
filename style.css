@@ -1,90 +1,48 @@
-.navigation_hum {
-  position: absolute;
-  right: 30px;
-  display: none;
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
 }
 
-.extra_hum {
-  margin-right: 10px;
-  display: none;
+.layout {
+  width: 80%;
+  margin: 20px auto;
 }
-
-#container {
-  width: 100%;
-  margin: 0px auto;
-}
-#container #header {
-  display: flex;
-  height: 40px;
+.layout #header {
+  height: 100px;
   background-color: #F3F2ED;
-  align-items: center;
-  padding: 10px 15px;
+  margin: 0;
+  padding: 10px;
 }
-#container #header a {
+.layout #header a {
   text-decoration: none;
-  font-size: 25px;
 }
-#container #wrapper {
+
+.container {
+  height: 100vh;
   display: flex;
   justify-content: space-between;
-  height: 100vh;
-  overflow: hidden;
-}
-#container #wrapper #extra {
-  width: 200px;
-  text-align: center;
-  max-height: 350px;
-  background-color: #CCC8B3;
-  text-align: left;
-  padding: 6px 10px;
-  line-height: 20px;
-  overflow: hidden;
-}
-#container #wrapper #content {
-  width: 800px;
-  text-align: center;
-  text-align: start;
-  padding: 10px;
-}
-#container #wrapper #navigation {
-  width: 250px;
-  text-align: center;
-  height: 100px;
-  text-align: start;
-  background-color: #F6F0E0;
-  padding: 10px;
-}
-#container #wrapper #navigation ul {
-  padding: 0px;
-}
-#container #wrapper #navigation ul li {
-  list-style: none;
-  line-height: 25px;
-}
-#container #wrapper #navigation ul li a {
-  text-decoration: none;
-}
-#container #footer {
-  background-color: #BFBD93;
-  padding: 8px;
-}
-#container #footer p {
-  margin-bottom: 5px;
+  flex-wrap: wrap;
 }
 
-@media screen and (max-width: 768px) {
-  #navigation {
-    display: none;
-  }
-  .navigation_hum {
-    display: block;
-  }
+#footer {
+  height: 50px;
+  background: #BFBD93;
+  border-top: #FFFFFF 2px solid;
+  margin: 0;
+  padding: 0;
 }
-@media screen and (max-width: 550px) {
-  #extra {
-    display: none;
-  }
-  .extra_hum {
-    display: block;
-  }
+
+.content {
+  width: 256.4102564103px;
+  text-align: center;
+  background: #CCC8B3;
+  border-top: #FFFFFF 2px solid;
+}
+
+.secondary {
+  width: 294.1176470588px;
+  background: #F6F0E0;
+  border-top: #FFFFFF 2px solid;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */
