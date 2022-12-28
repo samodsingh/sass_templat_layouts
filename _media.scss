@@ -1,0 +1,11 @@
+
+@mixin width_height($width, $height){
+    width: $width + px ;
+    height: $height + px;
+    text-align: center;
+} 
+@mixin media ($width){
+    @media screen and (max-width : $width){
+        @content;
+    }
+}

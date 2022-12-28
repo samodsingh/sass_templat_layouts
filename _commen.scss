@@ -1,0 +1,50 @@
+@import "./media";
+.layout{
+    width: 80%;
+    margin: auto;
+    &__container{
+        width: 100%; 
+        margin: auto;
+        .container__header{
+            background-color: $header_bg;
+            padding: 10px;
+            & a{
+                text-decoration: none;
+            }
+        }
+     & .container_content{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        & .content{
+            @include media(900px){
+                @include width_height(200, 200);
+            }
+            @include media(600px){
+                @include width_height(350, 200);
+            }
+            @include width_height(350, 350);
+            background-color: $content_bg;
+            border-top:$content_border 2px solid;
+        }
+       
+     }
+     & .secondary{
+        height: 250px;
+        text-align: center;
+        background-color: $secondery_bg;
+        border-top:$secondery_border 2px solid;
+        margin-top: 5px;
+
+    
+    }
+    & .footer{
+        height: 40px;
+        text-align: center;
+        background-color: $footer_bg;
+        border-top:$footer_border 2px solid;
+    }
+    }
+    
+}
