@@ -1,50 +1,52 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 @import "./media";
-.layout{
-    width: 80%;
-    margin: auto;
-    &__container{
-        width: 100%; 
-        margin: auto;
-        .container__header{
-            background-color: $header_bg;
-            padding: 10px;
-            & a{
-                text-decoration: none;
-            }
-        }
-     & .container_content{
+.container{
+     
+    width: $row_width;
+   
+    &__header{
+        height: 60px;
         display: flex;
         justify-content: space-between;
-        flex-wrap: wrap;
+        align-items: center;
+        background-color: $header_bg;
+        padding: 0 20px;
 
-        & .content{
-            @include media(900px){
-                @include width_height(200, 200);
-            }
-            @include media(600px){
-                @include width_height(350, 200);
-            }
-            @include width_height(350, 350);
-            background-color: $content_bg;
-            border-top:$content_border 2px solid;
+        &--logo a{
+            color: $text_color;
+            text-decoration: none;
         }
-       
-     }
-     & .secondary{
-        height: 250px;
-        text-align: center;
-        background-color: $secondery_bg;
-        border-top:$secondery_border 2px solid;
-        margin-top: 5px;
 
-    
+        &--list{
+            width: 400px;           
+            @include flex(flex, space-around, center);
+            li{
+                list-style: none;
+                a{
+                    text-decoration: none;
+                    color: $text_color;
+                }
+            }
+        }        
+
+        .hub_icon{
+            display: none;            
+        }
+        @include media(){
+            .hub_icon{
+                display: block;
+            }
+            &--list{
+                display: none;
+            }
+        }
+
     }
-    & .footer{
-        height: 40px;
-        text-align: center;
-        background-color: $footer_bg;
-        border-top:$footer_border 2px solid;
-    }
-    }
-    
+   
 }

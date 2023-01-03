@@ -1,11 +1,10 @@
-
-@mixin width_height($width, $height){
-    width: $width + px ;
-    height: $height + px;
+$phone_width : 450;
+@mixin width_height($phone_width){
+    width: $phone_width + px ;
     text-align: center;
 } 
-@mixin media ($width){
-    @media screen and (max-width : $width){
+@mixin media (){
+    @media screen and (max-width : 450px){   
         @content;
     }
 }
